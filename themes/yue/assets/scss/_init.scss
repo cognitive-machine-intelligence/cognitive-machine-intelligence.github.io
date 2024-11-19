@@ -1,0 +1,20 @@
+// Variables
+$body-margin-left: 16px !default;
+$body-margin-right: 16px !default;
+$font-family: "Trebuchet MS" !default;
+$base-font-size: 16px !default;
+$line-height: 1.5 !default;
+$body-max-width: 600px !default;
+$desktop-breakpoint: $body-max-width + $body-margin-left + $body-margin-right !default;
+
+$background-color-light: #EEEEEE !default;
+$background-color1-light: #444444 !default;
+$foreground-color-light: #222222 !default;
+$foreground-color3-light: #333333 !default;
+$accent-color-light: #16be62 !default;
+
+$background-color-dark: #222222 !default;
+$background-color1-dark: #444444 !default;
+$foreground-color-dark: #EEEEEE !default;
+$foreground-color3-dark: #BBBBBB !default;
+$accent-color-dark: #19fe80 !default;

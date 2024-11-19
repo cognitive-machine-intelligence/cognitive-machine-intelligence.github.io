@@ -30,26 +30,26 @@ blockquote {
   margin-left: 16px;
   margin-right: 16px; }
 
-@media (min-width: 800px) {
+@media (min-width: 632px) {
   .body {
-    width: 768px;
+    width: 600px;
     margin-left: auto;
     margin-right: auto; } }
 
 :root {
-  --background-color: #fbf1c7;
-  --background-color1: #ebdbb2;
-  --foreground-color: #3c3836;
-  --foreground-color3: #665c54;
-  --accent-color: #af3a03; }
+  --background-color: #EEEEEE;
+  --background-color1: #444444;
+  --foreground-color: #222222;
+  --foreground-color3: #333333;
+  --accent-color: #16be62; }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background-color: #282828;
-    --background-color1: #3c3836;
-    --foreground-color: #ebdbb2;
-    --foreground-color3: #bdae93;
-    --accent-color: #fe8019; } }
+    --background-color: #222222;
+    --background-color1: #444444;
+    --foreground-color: #EEEEEE;
+    --foreground-color3: #BBBBBB;
+    --accent-color: #19fe80; } }
 
 .body {
   background-color: var(--background-color);
@@ -651,10 +651,10 @@ pre:not(.chroma),
   background-color: var(--background-color1); }
 
 .html {
-  font-size: 18px; }
+  font-size: 16px; }
 
 .body {
-  font-family: sans-serif;
+  font-family: "Trebuchet MS";
   line-height: 1.5; }
 
 p,
