@@ -1,0 +1,44 @@
+# Hugo generated files
+/public/
+/resources/
+/hugo_stats.json
+
+# Local Hugo server files
+/.hugo_build.lock
+
+# Dependency directories
+/node_modules/
+/vendor/
+
+# System files
+.DS_Store
+Thumbs.db
+*.log
+
+# Backup files
+*.bak
+*.swp
+*.tmp
+*.old
+
+# Files created by editors/IDEs
+.idea/
+/.vscode/
+/*.sublime-workspace
+/*.sublime-project
+
+# OS-specific files
+*.DS_Store
+*.AppleDouble
+*.LSOverride
+
+# Temporary files created during build or by tools
+*.lock
+/.sass-cache
+/.cache
+
+# Optional: Configuration files (uncomment if you want to exclude them)
+# /.env
+# config.toml
+# config.yaml
+# config.json
