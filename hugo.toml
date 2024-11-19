@@ -2,9 +2,3 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Cognitive Machine Intelligence'
 theme = 'yue'
-
-[params.author]
-    intro = """\
-    'hugo-dusk' theme for [hugo](https://gohugo.io/) an open-source static site generator.\
-  """
-

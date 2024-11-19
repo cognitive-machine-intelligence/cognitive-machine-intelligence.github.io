@@ -3,16 +3,20 @@
 {{ $homePagerSize := or site.Params.homePagerSize 10 }}
 {{ $paginator := .Paginate $pages $homePagerSize }}
   {{ .Content }}
-  {{ range $paginator.Pages }}
+  <h2>Recent Discussions</h2>
+  {{ $total := len $paginator.Pages }}
+  {{ range $i, $page := $paginator.Pages }}
+    <div class="{{if eq $total 1 }}singleton-paginator-post-container{{ else if eq $i 0 }}first-paginator-post-container{{ else if eq $i (sub $total 1) }}last-paginator-post-container{{ else }}paginator-post-container{{ end }}">
     <h2 class="home-post-title"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
     {{ partial "main/dates.html" . }}
-    {{ with .Summary }}
+    {{ with $page.Summary }}
     {{- /*
     Create deterministic summary output for styling.
     See https://github.com/gohugoio/hugo/issues/8910
     */ -}}
     <p class="summary">{{ . | plainify | htmlUnescape | chomp }}</p>
     {{- end }}
+    </div>
   {{ end }}
   <nav class="paginator">
   {{- template "_internal/pagination.html" . }}
